@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lei Wu</title>
+    <script src="/static/js/vendor/jquery.js"></script>
+    <script src="/static/js/vendor/velocity.min.js"></script>
+    <script src="/static/js/index.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//static/css/vendor/foundation.min.css"> -->
+
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+      <header>
+
+        <div class="logo">
+          <img src="/static/img/logo.png" />
+        </div>
+
+        <ul class="right text-list font20">
+          <li><a href="#About" class="shadow-link">About</a></li>
+          <li><a href="#OnlineRSSReader" class="shadow-link">Projects</a></li>
+          <li><a href="#Contact" class="shadow-link">Contact</a></li>
+        </ul>
+
+      </header>
+
+      <div class="height-holder"></div>
+
+
+      <div class="wrapper">
+
+        <section id="About" class="section">
+          <div class="row centering">
+            <h2><p class="typing-0">Hi, I'm Lei.</p></h2>
+
+          </div>
+          <div class="row">
+            <div class="col-4 col centering">
+              <div><img src="/static/img/me.png" class="personal-img" /></div>
+            </div>
+            <div class="col-8 col">
+              <div class="section-detail">I'm a Master's student studying Computer Science at Washington University in St. Louis. I love programming and implementing cool ideas. As a big fan of rock music, I love R.E.M., Radiohead and other great bands. I also read classic literature and take part in long distance running in my spare time.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="col-6 col">
+            <h2 id="OnlineRSSReader">Online RSS Reader</h2>
+            <div class="section-detail">
+              Online RSS Reader is a web app with PHP backend. With the use of SPA (Single Page Application) and rich interactions, it creates a comfortable experience for users to read feeds from RSS sources. It supports 3 main RSS formats: RSS1.0, RSS2.0 and Atom. Users can subscribe from selected sources or add any valid sources with a valid URL. This app also provides the feature of the background sync, making sure you can see the latest news any time you log in.
+            </div>
+            <div class="section-tags">
+              <span class="section-tag">PHP</span>
+              <span class="section-tag">jQuery</span>
+            </div>
+          </div>
+          <div class="col-6 col">
+            <div class="section-image"><img src="/static/img/onlinerssreader.png" /></div>
+          </div>
+        </section>
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="col-3 col">
+            <h2 id="njxd.org">njxd.org</h2>
+          </div>
+          <div class="col-9 col">
+            <div class="section-detail">Built with Django framework, njxd.org is a commercial website for a local business in construction field in China. This is an all-in-one platform providing both external homepage and internal ERP system. It helps staffs manage all the data from orders, sales, storages etc., as well as powerful features of analyzing data, assisting the business to make the optimal choice and maximize profits. Apart from this, the platform also has built-in OA system and a completed authentication mechanism. Public website is integrated with responsive layout, and is adaptive to both desktop and mobile browsers.</div>
+            <div class="section-tags">
+              <span class="section-tag">Django</span>
+              <span class="section-tag">jQuery</span>
+              <span class="section-tag">MySQL</span>
+            </div>
+          </div>
+        </section>
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="row ">
+            <h2 class="centering" id="Fred's Neverland">Fred's Neverland</h2>
+            <div class="section-detail">This is my personal blog starting from July 2013. Got the name from J.M.Barrie's novel, it is the place I keep my thoughts and ideas. The website is built with Django framework and has a clean layout for better readability. In addition to regular blog articles, I also share my timeline and recently read book there. Blogs were mostly written in Simplified Chinese (recently shifted to English), and you can visit it at <a href="http://www.fredsneverland.com">www.fredsneverland.com</a>. It also has a personal iOS client for me to view and update information.</div>
+            <div class="section-tags">
+              <span class="section-tag">Django</span>
+              <span class="section-tag">iOS</span>
+            </div>
+          </div>
+          <div class="row centering">
+            <div class="section-image"><img src="/static/img/fredsneverland.png" /></div>
+          </div>
+        </section>
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="row">
+            <div class="col-4 col">
+              <h2 id="timeline.js">timeline.js</h2>
+            </div>
+            <div class="col-8 col">
+              <div class="section-detail">timeline.js is a tiny jQuery plugin for you to visualize chronological events. This plugin reads JSON data and exports clean timeline graph in SVG format. It supports horizontal and vertical layouts.</div>
+              <div class="section-tags">
+                <span class="section-tag">jQuery</span>
+                <span class="section-tag">HTML5</span>
+              </div>
+            </div>
+          </div>
+          <div class="row centering">
+            <div class="section-image"><img src="/static/img/timelinejs.png" /></div>
+          </div>
+          
+        </section>
+
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+
+          <div class="col-8 col col-dashed-border">
+            <div class="row">
+              <h2 id="Scotland Yard">Scotland Yard</h2>
+              <div class="section-contributor">with Yidong</div>
+            </div>
+            <div class="row">
+              <div class="section-detail">
+                Scotland Yard is an online version of the famous board game. Built in tornado framework, it provides a real-time experience. This web app makes the use of HTML5 Canvas and creates great UE with rich interactions of some cool HTML5 features. It supports single player mode and multiplayer mode, and also has a map editor. For the single player mode, the game also implemented AI with Expectimax Search.
+              </div>
+              <div class="section-tags">
+                <span class="section-tag">tornado</span>
+                <span class="section-tag">HTML5</span>
+                <span class="section-tag">Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 col">
+            <div class="row">
+              <h2 id="Heads Up">Heads Up</h2>
+            </div>
+            <div class="row">
+              <div class="section-detail">Heads Up is my own implementation of iOS app introduced in the Ellen's Show by Ellen DeGeneres. It has a remote word bank and always bring joy among myself and my friends at party time.</div>
+              <div class="section-tags">
+                <span class="section-tag">iOS</span>
+                <span class="section-tag">Objective-C</span>
+              </div>
+            </div>
+          </div>
+          
+          
+        </section>
+
+        <hr class="dashed-hr">
+
+        <section class="section" id="ez-note">
+          <div class="col-4 col">
+            <div class="section-image"><img src="/static/img/eznote.png" /></div>
+          </div>
+          <div class="col-8 col">
+            <h2 id="EZ Note">EZ Note</h2>
+            <div class="section-contributor">with Ren and Yiheng</div>
+            <div class="section-detail">
+              EZ Note is a lightweight iOS note taking application supporting iPhone and iPad platform. Users can compose and manage rich format notes, along with image and audio pieces inside. Users can also set custom hotkeys for quick text formatting.
+            </div>
+            <div class="section-tags">
+              <span class="section-tag">iOS</span>
+              <span class="section-tag">Objective-C</span>
+            </div>
+          </div>
+        </section>
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="col-6 col">
+            <h2 id="The Rolling Cube">The Rolling Cube</h2>
+            <div class="section-contributor">with Andy, Paras and Yiheng</div>
+            <div class="section-detail">
+              Inspired from Minecraft, the Rolling Cube also has a setting of world made by cubes. The main character of the game is a cube package, which was accidentally dropped from a delivery truck. The goal of the game is to manage to roll the cube to the end point. Different faces of the cube have different attributes. The cube may find fire, ice, and other obstacles during the trip, and players need to figure out a route to make the use of different types of faces and avoid being killed by those obstacles. This game has over 20 levels with vivid animations and pixel-style textures.
+            </div>
+            <div class="section-tags">
+              <span class="section-tag">Unity 3D</span>
+              <span class="section-tag">C#</span>
+            </div>
+            
+          </div>
+          <div class="col-6 col">
+            <div class="section-image"><img src="/static/img/rollingcube.png" /></div>
+          </div>
+        </section>
+
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="col-4 col">
+            <div class="section-image"><img src="/static/img/lightweightdjango.png" /></div>
+          </div>
+          <div class="col-8 col">
+            <h2 id="LightweightDjango">Translation of <i>Lightweight Django</i></h2>
+            <div class="section-detail">
+              <i>Lightweight Django</i> is a great book discussing using Django framework in a lightweight way written by Julia Elman and Mark Lavin, published by O'Reilly. The book mainly talks on how to make the most of Django’s decoupled design by choosing the components you need to build the lightweight applications you want. It also shows experienced Django developers how to include REST APIs, WebSockets, and client-side MVC frameworks such as Backbone.js into new or existing projects. I was very honored to be chosen by China Electric Power Press to be the authorized translator of this book, and has the opportunity to introduce the great ideas and approaches covered in this book to Chinese readers. The Chinese translation of this book will be published soon.
+            </div>
+            <div class="section-tags">
+              <span class="section-tag">Django</span>
+              <span class="section-tag">Backbone</span>
+              <span class="section-tag">WebSockets</span>
+            </div>
+            
+          </div>
+          
+        </section>
+        
+
+        <hr class="dashed-hr">
+
+        <section class="section">
+          <div class="row">
+            <h2 id="Contact">Contact</h2>
+          </div>
+          <div class="row">
+            <div class="section-detail">
+              <h3>Leave a message:</h3>
+              <form class="contact-form font20">
+                <input type="email" name="email" placeholder="Your e-mail"/><br />
+                <textarea rows="4" placeholder="Message"></textarea><br />
+                <input type="submit" value="Send" disabled="disabled" />
+                (Not available yet)
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="section-detail">
+              <h3>or send an e-mail: </h3>
+              <a href="mailto:fred.wulei@gmail.com">fred.wulei@gmail.com</a>
+            </div>
+          </div>
+        </section>
+      </div>
+     
+      <footer class="font20">
+        <p>&copy; 2015 Lei Wu</p>
+      </footer>
+  </body>
+</html>
