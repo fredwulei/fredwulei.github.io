@@ -390,7 +390,7 @@ progress::-moz-progress-bar{
 
 .skill-title {
   display: inline-block;
-  min-width: 300px;
+  min-width: 200px;
   height: 30px;
   line-height: 30px;
   overflow: hidden;
