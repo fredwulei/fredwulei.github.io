@@ -15,6 +15,11 @@ $(function() {
       $('header').removeClass('fixed-header');
       $('.height-holder').hide();
     }
+    // alert(scroll);
+    if(scroll > $('.skill').offset().top-200){
+      progressAnimation();
+
+    }
   });
 
 
@@ -24,12 +29,25 @@ $(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 60
           }, 1000);
           return false;
         }
     }
   });
+
+  function progressAnimation(){
+      $('.skill-progress-bar').each(function(){
+        var w = $(this).data('percent')+'%';
+        $(this).animate({
+          width: w
+        }, 500, function() {
+        });
+      });
+      
+  }
+
+
 
 
     // alert(123);

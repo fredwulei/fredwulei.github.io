@@ -140,6 +140,8 @@ footer{
   font-size: 30px;
 }
 
+
+
 .section .section-detail{
   font-size: 18px;
   line-height: 28px;
@@ -173,10 +175,17 @@ footer{
 
 .section img{
   max-width: 100%;
+  
 }
 
 .section-image{
   vertical-align: middle;
+  position: relative;
+}
+
+
+.section img.vertical-centering{
+  margin-top: 50px;
 }
 
 
@@ -359,6 +368,86 @@ p.typing {
   background: black;
 }
 */
+
+
+
+progress{
+  border: none;
+  background: #cccccc;
+  height: 10px;
+}
+
+
+progress::-moz-progress-bar{
+  background: #333333;
+}
+
+
+.skill-item{
+  margin: 10px;
+  position: relative;
+}
+
+.skill-title {
+  display: inline-block;
+  min-width: 300px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.skill-progress{
+  background-color: #cccccc;
+  width: 400px;
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+
+}
+.skill-progress-bar{
+  background-color: #333333;
+  position: relative;
+  text-align: right;
+  width: 30%;
+  overflow: hidden;
+  height: 100%;
+}
+
+/*
+.skill-progress-bar.width-50{
+  width: 50%;
+}
+.skill-progress-bar.width-60{
+  width: 60%;
+}
+.skill-progress-bar.width-70{
+  width: 70%;
+}
+.skill-progress-bar.width-80{
+  width: 80%;
+}
+.skill-progress-bar.width-90{
+  width: 90%;
+}
+*/
+.skill-progress-label{
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+/*.progress-title {
+  display: inline-block;
+  min-width: 200px;
+}
+
+.progress-value {
+  display: inline-block;
+  min-width: 200px;
+}*/
+
+
+
 
 
 .contact-form input[type=email]{
