@@ -1,445 +1,438 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Lei Wu</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Lei Wu's personal page introducing his skills and works">
-    <meta name="keywords" content="Lei Wu,Python,JavaScript,HTML,CSS,Objective-C,PHP" >
-    <meta name="author" content="Lei Wu" >
-    <script src="/static/js/vendor/jquery.js"></script>
-    <script src="/static/js/vendor/velocity.min.js"></script>
-    <script src="/static/js/index.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="//static/css/vendor/foundation.min.css"> -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/static/img/favicon.ico">
+  <title>Lei Wu — Software Engineer</title>
+  <meta name="description" content="Lei Wu is a software engineer in Boston building distributed systems and enterprise AI platforms.">
+  <meta name="author" content="Lei Wu">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
 
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-      <header>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Lei Wu — Software Engineer">
+  <meta property="og:description" content="Distributed systems, enterprise AI platforms, and a few things built for fun.">
+  <meta property="og:url" content="https://leiwu.me/">
+  <meta property="og:image" content="https://leiwu.me/static/img/me.jpg">
 
-        <div class="logo">
-          <img src="/static/img/logo.png" />
+  <link rel="icon" href="/static/img/favicon.ico">
+  <link rel="stylesheet" href="/static/css/index.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lei Wu",
+    "url": "https://leiwu.me/",
+    "image": "https://leiwu.me/static/img/me.jpg",
+    "email": "mailto:fred.wulei@gmail.com",
+    "jobTitle": "Software Development Engineer",
+    "worksFor": { "@type": "Organization", "name": "Amazon" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Washington University in St. Louis" },
+      { "@type": "CollegeOrUniversity", "name": "Nanjing University of Information Science & Technology" }
+    ],
+    "sameAs": ["https://github.com/fredwulei", "https://www.linkedin.com/in/fredwulei"]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Lei Wu</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Boston, MA</p>
+          <h1>Hi, I'm Lei.</h1>
+          <p class="lede">
+            I'm a software engineer working on distributed systems and enterprise AI platforms.
+            Most of my work is on the foundational services underneath large, heavily regulated
+            products — the kind that have to stay correct for millions of people, in every market
+            they run in.
+          </p>
+          <ul class="hero-links">
+            <li><a href="mailto:fred.wulei@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/fredwulei">LinkedIn</a></li>
+            <li><a href="https://github.com/fredwulei">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="hero-photo">
+          <img src="/static/img/me.jpg" width="900" height="1350"
+               alt="Portrait of Lei Wu" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <div class="prose">
+          <p>
+            I've spent the last decade or so on backend and platform work: designing distributed
+            architectures, untangling long-lived legacy systems, and more recently applying LLMs
+            to problems where correctness and evaluation actually matter.
+          </p>
+          <p>
+            These days my work splits between two things. One is core platform architecture —
+            microservices, event sourcing, API contracts, and data modeling that has to hold up
+            under billions of transactions a year and an unreasonable amount of country-by-country
+            variation. The other is AI systems — multi-agent orchestration, enterprise knowledge
+            retrieval, secure tool integration, and the evaluation harnesses that keep them honest.
+          </p>
+          <p>
+            Outside of work I mostly build things.
+            <a href="https://ai.leiwu.me" target="_blank" rel="noopener">Neverland&nbsp;AI</a> is my
+            personal AI platform — agents over my own knowledge base, with skills, artifacts and a
+            chat UI I use every day.
+            <a href="https://work.leiwu.me" target="_blank" rel="noopener">Workland</a> is that same
+            instinct pointed at business: a B2B AI platform where a team defines a process and an
+            assistant works the records alongside them. Then there are the toys —
+            <a href="#projects">Habitually</a>, an iOS habit tracker, and
+            <a href="#projects">Second&nbsp;Serve</a>, a tennis career simulation.
+          </p>
+          <p>
+            Away from the keyboard it's tennis, sailing, climbing and skiing, as many national parks
+            as I can get to, a stack of books, and a lot of classical music.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job-head">
+              <h3>Software Development Engineer</h3>
+              <p class="org">Amazon <span class="sep">·</span> Boston, MA</p>
+            </div>
+            <p class="when">May 2019 — Present</p>
+            <ul class="bullets">
+              <li>
+                Technical lead and long-term domain owner for foundational services within Amazon's
+                next-generation HR platform, supporting ~10M employees, candidates, contractors, and
+                alumni worldwide; partner with engineering leadership and cross-functional teams to
+                align technical strategy and guide long-term architectural direction.
+              </li>
+              <li>
+                Designed and implemented enterprise AI platforms for developer productivity and
+                business intelligence — multi-agent orchestration, enterprise knowledge retrieval,
+                secure tool integration, workflow automation, evaluation, and conversational analytics.
+              </li>
+              <li>
+                Designed the platform's distributed architecture: microservices, event sourcing,
+                API contracts, and flexible data modeling supporting billions of annual transactions
+                and extensive global regulatory variation.
+              </li>
+              <li>
+                Led migration off a 20+ year legacy platform through cross-team coordination,
+                incremental rollout, and bi-directional synchronization, enabling global adoption
+                while maintaining data integrity and regulatory compliance.
+              </li>
+              <li>
+                Built configurable React-based administrative applications alongside validation,
+                permission, and no-code configuration frameworks, cutting manual operational effort
+                while enabling country-specific HR workflows.
+              </li>
+            </ul>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-head">
+              <h3>Software Engineer</h3>
+              <p class="org">EverQuote, Inc. <span class="sep">·</span> Cambridge, MA</p>
+            </div>
+            <p class="when">Aug 2016 — May 2019</p>
+            <ul class="bullets">
+              <li>
+                Led and contributed to backend and full-stack systems supporting search engine
+                marketing and advertising workflows, handling millions of daily requests and
+                large-scale reporting pipelines.
+              </li>
+              <li>
+                Migrated major datasets to Spark and built a self-service ETL platform, improving
+                analytics efficiency by ~30% and enabling faster iteration for marketing and
+                analytics teams.
+              </li>
+              <li>
+                Built and evolved internal tools for ad management and asset review, significantly
+                reducing manual effort, error rates, and turnaround time while improving system
+                performance and test coverage.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3 class="subhead">Education</h3>
+        <ul class="education">
+          <li>
+            <div class="job-head">
+              <h3>M.S. in Computer Science</h3>
+              <p class="org">Washington University in St. Louis <span class="sep">·</span> St. Louis, MO</p>
+            </div>
+            <p class="when">Jan 2015 — May 2016</p>
+          </li>
+          <li>
+            <div class="job-head">
+              <h3>B.S. in Software Engineering</h3>
+              <p class="org">Nanjing University of Information Science &amp; Technology <span class="sep">·</span> Nanjing, China</p>
+            </div>
+            <p class="when">Sep 2010 — Jun 2014</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <dl class="skills">
+          <div class="skill reveal">
+            <dt>Languages</dt>
+            <dd><span class="chip">Java</span><span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">SQL</span></dd>
+          </div>
+          <div class="skill reveal">
+            <dt>Architecture &amp; Backend</dt>
+            <dd>
+              <span class="chip">System Design</span><span class="chip">Distributed Systems</span>
+              <span class="chip">Microservices</span><span class="chip">Event Sourcing</span>
+              <span class="chip">Event-Driven Architecture</span><span class="chip">API Design</span>
+              <span class="chip">Data Modeling</span><span class="chip">AWS</span>
+            </dd>
+          </div>
+          <div class="skill reveal">
+            <dt>AI Systems</dt>
+            <dd>
+              <span class="chip">LLM Applications</span><span class="chip">Multi-Agent Systems</span>
+              <span class="chip">RAG</span><span class="chip">MCP</span>
+              <span class="chip">AI Evaluation</span><span class="chip">Tool Integration</span>
+            </dd>
+          </div>
+          <div class="skill reveal">
+            <dt>Frontend</dt>
+            <dd><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Micro-Frontend Architecture</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-note">
+          What I build outside of work, plus a shelf of older things from my student and
+          early-career years.
+        </p>
+
+        <div class="cards cards--featured">
+
+          <article class="card card--logo reveal">
+            <img src="/static/img/neverland.jpg" alt="Neverland AI logo" loading="lazy">
+            <div class="card-body">
+              <h3><a href="https://ai.leiwu.me" target="_blank" rel="noopener">Neverland AI</a></h3>
+              <p>
+                My personal AI platform. Agents working over my own knowledge base, with math,
+                weather and retrieval skills, generated artifacts, and interactive widgets —
+                documents, code pads, checklists, tables, kanban — that render straight into the
+                conversation. Agents are configurable and stored per user, and the same agents are
+                exposed as MCP tools.
+              </p>
+              <p class="tags"><span>React</span><span>TypeScript</span><span>AWS</span><span>MCP</span><span>Bedrock</span></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body card-body--plain">
+              <h3><a href="https://work.leiwu.me" target="_blank" rel="noopener">Workland</a></h3>
+              <p>
+                Every small business already has a process — it's in a spreadsheet, a chat thread,
+                and one person's head. Workland writes it down once: a workflow is the steps it goes
+                through, and every run of it is a case, standing on one step, collecting what that
+                step asks for, and moving on. Then point the assistant at it — it works the same
+                steps, by the same rules, on the same record, hands on the work rather than a
+                chatbot beside it.
+              </p>
+              <p class="tags"><span>React</span><span>TypeScript</span><span>AWS</span><span>LLM tools</span></p>
+            </div>
+          </article>
+
+          <article class="card card--logo reveal">
+            <img src="/static/img/habitually.png" alt="Habitually app icon" loading="lazy">
+            <div class="card-body">
+              <h3>Habitually</h3>
+              <p>
+                An iOS habit tracker: streaks and history on Core Data, HealthKit where a habit maps
+                to real activity, and a home-screen widget so the day's list is one glance away.
+              </p>
+              <p class="tags"><span>Swift</span><span>Core Data</span><span>HealthKit</span><span>Widgets</span></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="/static/img/secondserve.jpg" alt="Second Serve app icon" loading="lazy">
+            <div class="card-body">
+              <h3>Second Serve</h3>
+              <p>
+                A tennis career simulation for iOS: play a season, chase rankings and titles, with a
+                proper match rules engine, career state and save data behind it.
+              </p>
+              <p class="tags"><span>Swift</span><span>Simulation</span><span>Core Data</span></p>
+            </div>
+          </article>
+
         </div>
 
-        <ul class="right text-list font20">
-          <li><a href="#About" class="shadow-link">About</a></li>
-          <li><a href="#Projects" class="shadow-link">Projects</a></li>
-          <li><a href="#Skills" class="shadow-link">Skills</a></li>
-          <li><a href="#Contact" class="shadow-link">Contact</a></li>
-        </ul>
+        <details class="older">
+          <summary>Older projects</summary>
 
-      </header>
+        <div class="cards">
 
-      <div class="height-holder"></div>
-
-
-      <div class="wrapper">
-
-
-        <section id="About" class="about section">
-          <div class="row centering">
-            <h2><p class="typing-0">Hi, I'm Lei.</p></h2>
-
-          </div>
-          <div class="row">
-            <div class="col-4 col centering">
-              <div><img src="/static/img/me.png" class="personal-img" /></div>
+          <article class="card reveal">
+            <img src="/static/img/codemate.png" alt="Screenshot of CodeMate's four-panel interface" loading="lazy">
+            <div class="card-body">
+              <h3>CodeMate</h3>
+              <p>A real-time code sharing tool for working through coding problems together — shared editor, scratch console, problem notes, and chat in one four-panel view.</p>
+              <p class="tags"><span>node.js</span><span>socket.io</span></p>
             </div>
-            <div class="col-8 col">
-              <div class="section-detail">I'm a Master's student studying Computer Science at Washington University in St. Louis. I love programming and implementing cool ideas. As a big fan of rock music, I love R.E.M., Radiohead and other great bands. I also read classic literature and take part in long distance running in my spare time.</div>
+          </article>
+
+          <article class="card reveal">
+            <img src="/static/img/formit.jpg" alt="Screenshot of the Formit conversion tool" loading="lazy">
+            <div class="card-body">
+              <h3><a href="http://labs.leiwu.me/formit/">Formit</a></h3>
+              <p>An open-source template language and converter that turns plain, readable text into real HTML forms.</p>
+              <p class="tags"><span>Python</span><span>HTML</span></p>
             </div>
-          </div>
-        </section>
+          </article>
 
-        <section id="Projects" class="project">
-        <section class="section">
-        <div class="row">
-            <h2>Projects</h2>
-          </div>
-          <div class="row">
-            <div class="section-detail">
-            <p>Here are some selected projects I worked in past few years.</p>
+          <article class="card reveal">
+            <img src="/static/img/onlinerssreader.jpg" alt="Screenshot of the Online RSS Reader" loading="lazy">
+            <div class="card-body">
+              <h3>Online RSS Reader</h3>
+              <p>A single-page RSS reader with a PHP backend supporting RSS 1.0, RSS 2.0 and Atom, plus background sync so the latest news is always waiting.</p>
+              <p class="tags"><span>PHP</span><span>jQuery</span></p>
             </div>
-          </div>
-        </section>
+          </article>
 
-        <section class="section">
-          <div class="row ">
-            <h2 id="Codemate">CodeMate</h2>
-            <div class="section-detail">CodeMate is a real-time code sharing tool. It is designed for working on coding problems together. On the top-left panel, you can write code with nice syntax highlighting and auto complementation. On the bottom-left panel, you can get the output and check if your code works correctly in the console. The top-right panel is the place you paste your problem, and the bottom-right one is where you and your codemates communicate. This project uses node.js server with socket.io library to achieve high performance, and embeds ACE editor on the front side. Take a try on <a href="http://labs.leiwu.me:3457">CodeMate</a>.
-            <div class="section-tags">
-              <span class="section-tag">node.js</span>
-              <span class="section-tag">socket.io</span>
+          <article class="card reveal">
+            <div class="card-body card-body--plain">
+              <h3>njxd.org</h3>
+              <p>An all-in-one Django platform for a construction business in China: public marketing site plus an internal ERP/OA system with analytics and full authentication.</p>
+              <p class="tags"><span>Django</span><span>MySQL</span></p>
             </div>
-          </div>
-          <div class="row centering">
-            <div class="section-image"><img class="vertical-centering" src="/static/img/codemate.png" /></div>
-          </div>
-        </section>
+          </article>
 
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="col-4 col">
-            <div class="section-image"><img class="vertical-centering" src="/static/img/formit.jpg" /></div>
-            
-          </div>
-          <div class="col-8 col">
-            <h2 id="Formit">Formit</h2>
-            <div class="section-detail">
-              Formit is an open-source tool converting plain text to HTML form for web writers. It is both a template language using plain text format to write readable form; 2) a conversion tool written in Python converting formit forms to real HTML forms. You can learn more about formit's syntax and have try with the online conversion tool at its <a href="http://labs.leiwu.me/formit/">homepage</a>.
+          <article class="card reveal">
+            <img src="/static/img/fredsneverland.jpg" alt="Screenshot of the Fred's Neverland blog" loading="lazy">
+            <div class="card-body">
+              <h3>Fred's Neverland</h3>
+              <p>My personal blog, kept since 2013 — a Django site with a clean reading layout, plus an iOS client for posting on the go.</p>
+              <p class="tags"><span>Django</span><span>iOS</span></p>
             </div>
-            <div class="section-tags">
-              <span class="section-tag">Python</span>
-              <span class="section-tag">HTML</span>
+          </article>
+
+          <article class="card reveal">
+            <img src="/static/img/timelinejs.jpg" alt="Screenshot of a timeline rendered by timeline.js" loading="lazy">
+            <div class="card-body">
+              <h3>timeline.js</h3>
+              <p>A tiny jQuery plugin that renders chronological events from JSON as clean SVG timelines, in horizontal or vertical layouts.</p>
+              <p class="tags"><span>jQuery</span><span>HTML5</span></p>
             </div>
-          </div>
-        </section>
+          </article>
 
-        <hr class="dashed-hr">
-        
-        <section class="section">
-          <div class="col-6 col">
-            <h2 id="OnlineRSSReader">Online RSS Reader</h2>
-            <div class="section-detail">
-              Online RSS Reader is a web app with PHP backend. With the use of SPA (Single Page Application) and rich interactions, it creates a comfortable experience for users to read feeds from RSS sources. It supports 3 main RSS formats: RSS1.0, RSS2.0 and Atom. Users can subscribe from selected sources or add any valid sources with a valid URL. This app also provides the feature of the background sync, making sure you can see the latest news any time you log in.
+          <article class="card reveal">
+            <div class="card-body card-body--plain">
+              <h3>Scotland Yard</h3>
+              <p class="contrib">with Yidong</p>
+              <p>An online version of the board game with single- and multiplayer modes, a map editor, and an Expectimax-search AI opponent.</p>
+              <p class="tags"><span>tornado</span><span>HTML5 Canvas</span><span>AI</span></p>
             </div>
-            <div class="section-tags">
-              <span class="section-tag">PHP</span>
-              <span class="section-tag">jQuery</span>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body card-body--plain">
+              <h3>Heads Up</h3>
+              <p>My own iOS take on the party game from Ellen's show, with a remote word bank that kept it fresh.</p>
+              <p class="tags"><span>iOS</span><span>Objective-C</span></p>
             </div>
-          </div>
-          <div class="col-6 col">
-            <div class="section-image"><img class="vertical-centering" src="/static/img/onlinerssreader.jpg" /></div>
-          </div>
-        </section>
+          </article>
 
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="col-3 col">
-            <h2 id="njxd.org">njxd.org</h2>
-          </div>
-          <div class="col-9 col">
-            <div class="section-detail">Built with Django framework, njxd.org is a commercial website for a local business in construction field in China. This is an all-in-one platform providing both external homepage and internal ERP system. It helps staffs manage all the data from orders, sales, storages etc., as well as powerful features of analyzing data, assisting the business to make the optimal choice and maximize profits. Apart from this, the platform also has built-in OA system and a completed authentication mechanism. Public website is integrated with responsive layout, and is adaptive to both desktop and mobile browsers.</div>
-            <div class="section-tags">
-              <span class="section-tag">Django</span>
-              <span class="section-tag">jQuery</span>
-              <span class="section-tag">MySQL</span>
+          <article class="card reveal">
+            <img src="/static/img/eznote.jpg" alt="Screenshot of the EZ Note iOS app" loading="lazy">
+            <div class="card-body">
+              <h3>EZ Note</h3>
+              <p class="contrib">with Ren and Yiheng</p>
+              <p>A lightweight rich-text note app for iPhone and iPad: hot-key formatting, photos and audio, organised into notebooks and tags.</p>
+              <p class="tags"><span>iOS</span><span>Objective-C</span></p>
             </div>
-          </div>
-        </section>
+          </article>
 
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="row ">
-            <h2 class="centering" id="Fred's Neverland">Fred's Neverland</h2>
-            <div class="section-detail">This is my personal blog starting from July 2013. Got the name from J.M.Barrie's novel, it is the place I keep my thoughts and ideas. The website is built with Django framework and has a clean layout for better readability. In addition to regular blog articles, I also share my timeline and recently read book there. Blogs were mostly written in Simplified Chinese (recently shifted to English), and you can visit it at <a href="http://www.fredsneverland.com">www.fredsneverland.com</a>. It also has a personal iOS client for me to view and update information.</div>
-            <div class="section-tags">
-              <span class="section-tag">Django</span>
-              <span class="section-tag">iOS</span>
+          <article class="card reveal">
+            <img src="/static/img/rollingcube.jpg" alt="Screenshot of The Rolling Cube game" loading="lazy">
+            <div class="card-body">
+              <h3>The Rolling Cube</h3>
+              <p class="contrib">with Andy, Paras and Yiheng</p>
+              <p>A Unity 3D puzzle game where each face of the cube carries a different ability — roll it through 20+ levels of fire, ice and pixel-art obstacles.</p>
+              <p class="tags"><span>Unity 3D</span><span>C#</span></p>
             </div>
-          </div>
-          <div class="row centering">
-            <div class="section-image"><img src="/static/img/fredsneverland.jpg" /></div>
-          </div>
-        </section>
+          </article>
 
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="row">
-            <div class="col-4 col">
-              <h2 id="timeline.js">timeline.js</h2>
+          <article class="card reveal">
+            <img src="/static/img/lightweightdjango.jpg" alt="Cover of Lightweight Django" loading="lazy">
+            <div class="card-body">
+              <h3>Translation of <i>Lightweight Django</i></h3>
+              <p>The authorized Chinese translation of O'Reilly's <i>Lightweight Django</i> (Elman &amp; Lavin), published by China Electric Power Press.</p>
+              <p class="tags"><span>Django</span><span>Backbone</span><span>WebSockets</span></p>
             </div>
-            <div class="col-8 col">
-              <div class="section-detail">timeline.js is a tiny jQuery plugin for you to visualize chronological events. This plugin reads JSON data and exports clean timeline graph in SVG format. It supports horizontal and vertical layouts.</div>
-              <div class="section-tags">
-                <span class="section-tag">jQuery</span>
-                <span class="section-tag">HTML5</span>
-              </div>
-            </div>
-          </div>
-          <div class="row centering">
-            <div class="section-image"><img src="/static/img/timelinejs.jpg" /></div>
-          </div>
-          
-        </section>
+          </article>
 
-
-        <hr class="dashed-hr">
-
-        <section class="section">
-
-          <div class="col-8 col col-dashed-border">
-            <div class="row">
-              <h2 id="Scotland Yard">Scotland Yard</h2>
-              <div class="section-contributor">with Yidong</div>
-            </div>
-            <div class="row">
-              <div class="section-detail">
-                Scotland Yard is an online version of the famous board game. Built in tornado framework, it provides a real-time experience. This web app makes the use of HTML5 Canvas and creates great UE with rich interactions of some cool HTML5 features. It supports single player mode and multiplayer mode, and also has a map editor. For the single player mode, the game also implemented AI with Expectimax Search.
-              </div>
-              <div class="section-tags">
-                <span class="section-tag">tornado</span>
-                <span class="section-tag">HTML5</span>
-                <span class="section-tag">Artificial Intelligence</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 col">
-            <div class="row">
-              <h2 id="Heads Up">Heads Up</h2>
-            </div>
-            <div class="row">
-              <div class="section-detail">Heads Up is my own implementation of iOS app introduced in the Ellen's Show by Ellen DeGeneres. It has a remote word bank and always bring joy among myself and my friends at party time.</div>
-              <div class="section-tags">
-                <span class="section-tag">iOS</span>
-                <span class="section-tag">Objective-C</span>
-              </div>
-            </div>
-          </div>
-          
-          
-        </section>
-
-        <hr class="dashed-hr">
-
-        <section class="section" id="ez-note">
-          <div class="col-4 col">
-            <div class="section-image"><img src="/static/img/eznote.jpg" /></div>
-          </div>
-          <div class="col-8 col">
-            <h2 id="EZ Note">EZ Note</h2>
-            <div class="section-contributor">with Ren and Yiheng</div>
-            <div class="section-detail">
-              EZ Note is a lightweight iOS note taking application supporting both iPhone and iPad devices. Aiming on quickly note taking, it supports users to compose rich format notes with quick text formatting feature. You can set hot keys for any of the formatting commands if you want. Also, it's very easy for users to add photos or record audio to make multimedia notes. All the notes are organized in different notebooks, and support multiple tags for easy classification.
-            </div>
-            <div class="section-tags">
-              <span class="section-tag">iOS</span>
-              <span class="section-tag">Objective-C</span>
-            </div>
-          </div>
-        </section>
-
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="col-6 col">
-            <h2 id="The Rolling Cube">The Rolling Cube</h2>
-            <div class="section-contributor">with Andy, Paras and Yiheng</div>
-            <div class="section-detail">
-              Inspired from Minecraft, the Rolling Cube also has a setting of world made by cubes. The main character of the game is a cube package, which was accidentally dropped from a delivery truck. The goal of the game is to manage to roll the cube to the end point. Different faces of the cube have different attributes. The cube may find fire, ice, and other obstacles during the trip, and players need to figure out a route to make the use of different types of faces and avoid being killed by those obstacles. This game has over 20 levels with vivid animations and pixel-style textures.
-            </div>
-            <div class="section-tags">
-              <span class="section-tag">Unity 3D</span>
-              <span class="section-tag">C#</span>
-            </div>
-            
-          </div>
-          <div class="col-6 col">
-            <div class="section-image"><img class="vertical-centering" src="/static/img/rollingcube.jpg" /></div>
-          </div>
-        </section>
-
-
-        <hr class="dashed-hr">
-
-        <section class="section">
-          <div class="col-4 col">
-            <div class="section-image"><img class="vertical-centering"  src="/static/img/lightweightdjango.jpg" /></div>
-          </div>
-          <div class="col-8 col">
-            <h2 id="LightweightDjango">Translation of <i>Lightweight Django</i></h2>
-            <div class="section-detail">
-              <i>Lightweight Django</i> is a great book discussing using Django framework in a lightweight way written by Julia Elman and Mark Lavin, published by O'Reilly. The book mainly talks on how to make the most of Django’s decoupled design by choosing the components you need to build the lightweight applications you want. It also shows experienced Django developers how to include REST APIs, WebSockets, and client-side MVC frameworks such as Backbone.js into new or existing projects. I was very honored to be chosen by China Electric Power Press to be the authorized translator of this book, and has the opportunity to introduce the great ideas and approaches covered in this book to Chinese readers. The Chinese translation of this book will be published soon.
-            </div>
-            <div class="section-tags">
-              <span class="section-tag">Django</span>
-              <span class="section-tag">Backbone</span>
-              <span class="section-tag">WebSockets</span>
-            </div>
-            
-          </div>
-          
-        </section>
-        </section>
-        
-
-        <hr class="dashed-hr">
-
-        <section class="skill section">
-          <div class="row">
-            <h2 id="Skills">Skills</h2>
-          </div>
-          
-          <div class="row">
-
-            <div class="section-detail">
-            <p>Here are some of the skills I used to complete the projects above.</p>
-              <div class="skill-item">
-                <span class="skill-title">Web Front-end</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-90" data-percent="90">
-                    <div class="skill-progress-label">Proficient</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">Python</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-80" data-percent="80">
-                    <div class="skill-progress-label">Good</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">Java</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-70" data-percent="70">
-                    <div class="skill-progress-label">Good</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">C++</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-60" data-percent="60">
-                    <div class="skill-progress-label">Familiar</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">PHP</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-70" data-percent="70">
-                    <div class="skill-progress-label">Good</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">iOS</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-80" data-percent="80">
-                    <div class="skill-progress-label">Good</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">Android</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-50" data-percent="50">
-                    <div class="skill-progress-label">Familiar</div>
-                  </div>
-                </div>
-              </div>
-              <div id="mark" class="skill-item">
-                <span class="skill-title">Unity</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-60" data-percent="60">
-                    <div class="skill-progress-label">Familiar</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span class="skill-title">Flash</span>
-                <div class="skill-progress">
-                  <div class="skill-progress-bar width-60" data-percent="60">
-                    <div class="skill-progress-label">Familiar</div>
-                  </div>
-                </div>
-              </div>
-
-              <!--
-              <div class="skill-progress">
-                <span class="progress-title">Web Front-end</span>
-                <span class="progress-value"><progress value="9" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">Python</span>
-                <span class="progress-value"><progress value="8" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">Java</span>
-                <span class="progress-value"><progress value="6" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">C++</span>
-                <span class="progress-value"><progress value="6" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">PHP</span>
-                <span class="progress-value"><progress value="7" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">iOS</span>
-                <span class="progress-value"><progress value="8" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">Android</span>
-                <span class="progress-value"><progress value="5" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">Unity</span>
-                <span class="progress-value"><progress value="6" max="10"></progress></span>
-              </div>
-              <div class="skill-progress">
-                <span class="progress-title">Flash</span>
-                <span class="progress-value"><progress value="6" max="10"></progress></span>
-              </div>
-              -->
-            </div>
-          </div>
-        </section>
-
-        <hr class="dashed-hr">
-
-        <section class="section contact">
-          <div class="row">
-            <h2 id="Contact">Contact</h2>
-          </div>
-          <!--
-          <div class="row">
-            <div class="section-detail">
-              <h3>Leave a message:</h3>
-              <form class="contact-form font20">
-                <input type="email" name="email" placeholder="Your e-mail"/><br />
-                <textarea rows="4" placeholder="Message"></textarea><br />
-                <input type="submit" value="Send" disabled="disabled" />
-                (Not available yet)
-              </form>
-            </div>
-          </div>
-          -->
-          <div class="row">
-            <div class="section-detail">
-              <h3>Send an e-mail: </h3>
-              <a href="mailto:fred.wulei@gmail.com">fred.wulei@gmail.com</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="section-detail">
-              <h3>LinkedIn: </h3>
-              <a href="https://www.linkedin.com/in/fredwulei">https://www.linkedin.com/in/fredwulei</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="section-detail">
-              <h3>GitHub: </h3>
-              <a href="https://github.com/fredwulei">https://github.com/fredwulei</a>
-            </div>
-          </div>
-        </section>
-
+        </div>
+        </details>
       </div>
-     
-      <footer class="font20">
-        <p>&copy; 2015-2016 Lei Wu</p>
-      </footer>
-  </body>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="prose">
+          The fastest way to reach me is email — I'm happy to talk about platform architecture,
+          AI systems, or anything in between.
+        </p>
+        <ul class="contact-list">
+          <li><span class="label">Email</span><a href="mailto:fred.wulei@gmail.com">fred.wulei@gmail.com</a></li>
+          <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/fredwulei">linkedin.com/in/fredwulei</a></li>
+          <li><span class="label">GitHub</span><a href="https://github.com/fredwulei">github.com/fredwulei</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2015–2026 Lei Wu</p>
+    </div>
+  </footer>
+
+</body>
 </html>

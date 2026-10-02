@@ -1,0 +1,6 @@
+.DS_Store
+
+# Kept local only — these live in the repo root for convenience but must not
+# be published (Resume.pdf contains a personal phone number).
+/Resume.pdf
+/photo.jpg
